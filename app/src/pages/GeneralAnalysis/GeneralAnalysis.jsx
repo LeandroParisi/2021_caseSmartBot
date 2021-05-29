@@ -3,9 +3,9 @@ import React from 'react';
 import './GeneralAnalysis.scss';
 
 const GeneralAnalysis = () => (
-  <main>
+  <section className="generalAnalysisPage">
     GeneralAnalysis
-  </main>
+  </section>
 );
 
 export default GeneralAnalysis;
