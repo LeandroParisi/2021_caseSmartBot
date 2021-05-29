@@ -3,9 +3,9 @@ import React from 'react';
 import './Header.scss';
 
 const Header = () => (
-  <main>
+  <section className="header">
     Header
-  </main>
+  </section>
 );
 
 export default Header;

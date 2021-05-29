@@ -2,7 +2,13 @@
 @import '../../assets/scss/variables.scss';
 
 .generalAnalysisPage {
-  @include flexBox(column);
   background-color: $light-gray-color;
   min-height: 100vh;
+  position: relative;
+  padding: 15px;
+  
+  > .rightAligned {
+    @include flexBox(column);
+    min-width: 80%;
+  }
 }
