@@ -15,7 +15,6 @@
     align-self: flex-end;
     width: $rightAlignedWidth;
     margin-left: calc(100% - #{$rightAlignedWidth});
-    // margin-left: calc(#{$sideBarWidth} - #{$pagePadding * 2} - #{$baseMargin});
 
     > section {
       @extend .baseSection
