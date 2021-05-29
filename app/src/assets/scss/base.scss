@@ -1,0 +1,14 @@
+$pagePadding: 15px;
+$baseMargin: 10px;
+$rightAlignedWidth: 90%;
+
+
+.baseSection {
+  align-self: flex-end;
+  margin-bottom: $baseMargin;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  min-width: 100%;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+}

@@ -1,14 +1,24 @@
 @import '../../assets/scss/mixins.scss';
 @import '../../assets/scss/variables.scss';
+@import '../../assets/scss/base.scss';
+@import '../../components/SideBar/Sidebar.scss';
+
 
 .generalAnalysisPage {
   background-color: $light-gray-color;
   min-height: 100vh;
   position: relative;
-  padding: 15px;
+  padding: $pagePadding;
   
   > .rightAligned {
     @include flexBox(column);
-    min-width: 80%;
+    align-self: flex-end;
+    width: $rightAlignedWidth;
+    margin-left: calc(100% - #{$rightAlignedWidth});
+    // margin-left: calc(#{$sideBarWidth} - #{$pagePadding * 2} - #{$baseMargin});
+
+    > section {
+      @extend .baseSection
+    }
   }
 }

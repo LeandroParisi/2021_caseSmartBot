@@ -3,9 +3,9 @@ import React from 'react';
 import './AddRobot.scss';
 
 const AddRobot = () => (
-  <main>
+  <section>
     AddRobot
-  </main>
+  </section>
 );
 
 export default AddRobot;

@@ -3,9 +3,9 @@ import React from 'react';
 import './OperationsOverview.scss';
 
 const OperationsOverview = () => (
-  <main>
+  <section>
     OperationsOverview
-  </main>
+  </section>
 );
 
 export default OperationsOverview;

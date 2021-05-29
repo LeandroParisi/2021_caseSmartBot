@@ -3,9 +3,9 @@ import React from 'react';
 import './RobotsDashboard.scss';
 
 const RobotsDashboard = () => (
-  <main>
+  <section>
     RobotsDashboard
-  </main>
+  </section>
 );
 
 export default RobotsDashboard;

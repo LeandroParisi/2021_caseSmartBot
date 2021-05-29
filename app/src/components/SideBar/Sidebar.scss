@@ -1,7 +1,12 @@
 @import '../../assets/scss/mixins.scss';
 @import '../../assets/scss/variables.scss';
+@import '../../assets/scss/base.scss';
+
+$sideBarWidth: calc(100% - #{$rightAlignedWidth});
 
 .sideBar {
   position: absolute;
   min-height: 100vh;
+  margin-right: $pagePadding;
+  width: calc(#{$sideBarWidth} - #{$pagePadding * 2} - #{$baseMargin})
 }
