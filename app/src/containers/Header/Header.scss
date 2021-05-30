@@ -33,14 +33,8 @@ $innerPaddings: 15px;
     @include flexBox(row, flex-end);
     width: 40%;
 
-    > div {
+    > .switchContainer {
       margin: 0 10px;
-
-      .react-switch-handle {
-        height: 18px !important;
-        width: 18px !important;
-        top: 4px;
-      }
     }
     
     > p {
