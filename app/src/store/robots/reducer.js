@@ -1,17 +1,18 @@
 import {
-  CREATE_ROBOT,
+  CHANGE_MODE,
 } from './actions';
 
 const INITIAL_STATE = {
+  realMode: true,
   test: 30,
 };
 
 export default function robots(state = INITIAL_STATE, action) {
   switch (action.type) {
-    case CREATE_ROBOT:
+    case CHANGE_MODE:
       return {
         ...state,
-        test: action.test,
+        realMode: !state.realMode,
       };
     default:
       return state;

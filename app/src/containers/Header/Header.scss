@@ -1,3 +1,55 @@
 @import '../../assets/scss/mixins.scss';
 @import '../../assets/scss/variables.scss';
 
+
+$innerPaddings: 15px;
+
+.header {
+  @include flexBox(row, space-between);
+
+  .leftSection {
+    @include flexBox();
+
+
+    > .signalContainer {
+      padding: $innerPaddings;
+      border-right: 1px solid $gray-color-2;
+    }
+  
+    > h1 {
+      font-size: $font-xsmall;
+      font-weight: bold;
+      padding: $innerPaddings;
+  
+      > span {
+        color: $primary-color;
+        font-weight: normal;
+      }
+    }
+  }
+
+
+  > .modeToggle {
+    @include flexBox(row, flex-end);
+    width: 40%;
+
+    > div {
+      margin: 0 10px;
+
+      .react-switch-handle {
+        height: 18px !important;
+        width: 18px !important;
+        top: 4px;
+      }
+    }
+    
+    > p {
+      font-size: $font-xxsmall;
+
+      &.checked {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
