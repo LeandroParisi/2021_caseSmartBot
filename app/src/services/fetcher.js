@@ -16,9 +16,9 @@ const fetcher = async (method, url, body = null, headers = null) => {
     url,
     data: body && { ...body },
   };
-
   try {
     const response = await axios(options);
+    console.log('fetcher', response);
     return response.data;
   } catch (error) {
     return { message: error.response.data.message };
